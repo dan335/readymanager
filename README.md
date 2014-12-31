@@ -17,11 +17,6 @@ Example
             subscription group animals is NOT ready
         {{/if}}
     </template>
-
-
-    Bears = new Mongo.Collection('bears')
-    Bees = new Mongo.Collection('bees')
-    Books = new Mongo.Collection('books')
     
     
     if (Meteor.isClient) {
@@ -56,6 +51,10 @@ Example
         	return Books.find()
         })
     }
+
+    Bears = new Mongo.Collection('bears')
+    Bees = new Mongo.Collection('bees')
+    Books = new Mongo.Collection('books')
 
 
 Can also get the status of a subscription group in javascript.
