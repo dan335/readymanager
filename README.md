@@ -56,3 +56,9 @@ Example
         	return Books.find()
         })
     }
+
+
+Can also get the status of a subscription group in javascript.
+
+    // true if all of the subscriptions in the animals group are ready
+    subs.ready('animals')
