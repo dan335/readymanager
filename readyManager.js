@@ -3,6 +3,7 @@ ReadyManager = function () {
 }
 
 ReadyManager.prototype = {
+   // data = {groupName:'foo', subscriptions:[Meteor.subscribe().ready()]}
    subscriptions: function(data) {
       var self = this
 
@@ -38,7 +39,7 @@ ReadyManager.prototype = {
 
    },
 
-   // returns object with ready for each subscription and group
+
    ready: function(groupName) {
       var self = this
 
