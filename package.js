@@ -10,7 +10,7 @@ Package.onUse(function(api) {
   // readyManager.js uses all of these; before, it worked only in apps that
   // added tracker, underscore and templating themselves
   api.use(['reactive-var', 'tracker', 'underscore'])
-  api.use('templating', 'client')
+  api.use('templating@1.4.0', 'client')
   api.addFiles('readyManager.js');
   api.export('ReadyManager', 'client')
 });
